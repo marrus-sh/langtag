@@ -1,6 +1,6 @@
 /*
 #  langtag  #
-🌐🏷 An RDF library for JavaScript
+🌐🏷 A RegExp‐based BCP47 parser
 
 ___
 

@@ -37,16 +37,16 @@ Otherwise, you will get a string.
 For example:
 
 >   ```js
->   BCP47("en").language
+>   BCP47("en").language;
 >   //  ⇒  "en"
 >
->   BCP47("en").script
+>   BCP47("en").script;
 >   //  ⇒  undefined
 >
->   BCP47("zh-yue-HK").language
+>   BCP47("zh-yue-HK").language;
 >   //  ⇒  ["zh", "yue"]
 >
->   BCP47("en-a-myext-b-another").singleton
+>   BCP47("en-a-myext-b-another").singleton;
 >   //  ⇒  ["a", "b"]
 >   ```
 
@@ -500,7 +500,7 @@ It is recommended that the `toString()` and `valueOf()` methods be
       Nº: value: Object.freeze
         major: 1
         minor: 0
-        patch: 0
+        patch: 1
         toString: -> "#{@major}.#{@minor}.#{@patch}"
         valueOf: -> @major * 100 + @minor + @patch / 100
 

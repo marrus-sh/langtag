@@ -1,6 +1,6 @@
 /*
 #  langtag  #
-🌐🏷 An RDF library for JavaScript
+🌐🏷 A RegExp‐based BCP47 parser
 
 ___
 
@@ -250,7 +250,7 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
       value: Object.freeze({
         major: 1,
         minor: 0,
-        patch: 0,
+        patch: 1,
         toString: function toString() {
           return "".concat(this.major, ".").concat(this.minor, ".").concat(this.patch);
         },

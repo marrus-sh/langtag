@@ -22,7 +22,7 @@
 >   + <https://tools.ietf.org/html/bcp47>
 
 A language tag parser, matching the ABNF specified in BCP47.
-Only tests well&hyphen;formedness, *not* validity.
+Only tests well&#x2010;formedness, *not* validity.
 
 ##  Usage  ##
 
@@ -231,7 +231,7 @@ The helper function `splitTags()` splits the given input on `"-"`.
       return tags
 
 The helper function `buildSubtagArray()` returns an array of subtags
-  given a string or `BCP47`&hyphen;like object.
+  given a string or `BCP47`&#x2010;like object.
 
     buildSubtagArray = (tag) ->
       return [] unless tag?
@@ -325,7 +325,7 @@ The `extension` component of the tag, or the empty string.
 ####  `bcp47.singleton`.
 
 The `singleton` component of the tag, or the empty string.
-This holds the first (single&hyphen;character) subtag of each
+This holds the first (single&#x2010;character) subtag of each
   extension.
 
         singleton: value: gatherSubtagsFrom (
@@ -447,6 +447,7 @@ langtag's `BCP47` constructor is defined on "the global object", which
 + `window`
 + `exports`
 + `global`
+^
 
     globalObject = self ? (window ? (exports ? (global ? null)))
 
@@ -489,7 +490,7 @@ If you fork langtag and change its API, you should also change this
       ℹ: value: "https://go.KIBI.family/langtag/"
 
 The `Nº` property provides the version number of this version of
-  ｍｅｒｍａｉｄ, as an object with three parts: `major`, `minor`, and
+  langtag, as an object with three parts: `major`, `minor`, and
   `patch`.
 It is up to the API author (identified above) to determine how these
   parts should be interpreted.
@@ -517,14 +518,13 @@ This is only defined for compatibility with other scripts.
 <footer>
   <details>
   <summary>License notice</summary>
-  <p>This program is free software is free software: you can
-    redistribute it and/or modify it under the terms of the GNU
-    General Public License as published by the Free Software
-    Foundation, either version 3 of the License, or (at your option)
-    any later version. Similarly, you can redistribute and/or modify
-    the documentation sections of this document under the terms of the
-    Creative Commons Attribution-ShareAlike 4.0 International
-    License.</p>
+  <p>This program is free software: you can redistribute it and/or
+    modify it under the terms of the GNU General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version. Similarly, you can
+    redistribute and/or modify the documentation sections of this
+    document under the terms of the Creative Commons
+    Attribution-ShareAlike 4.0 International License.</p>
   <p>This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU

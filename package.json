@@ -1,0 +1,31 @@
+{
+  "name": "langtag-bcp47",
+  "version": "1.0.0",
+  "author": {
+    "name": "Kyebego",
+    "url": "https://go.KIBI.family/"
+  },
+  "license": "GPL-3.0-or-later",
+  "description": "🌐🏷 A RegExp‐based BCP47 parser",
+  "homepage": "https://github.com/marrus-sh/langtag#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marrus-sh/langtag.git"
+  },
+  "bugs": "https://github.com/marrus-sh/langtag/issues",
+  "devDependencies": {
+    "Roost": "git+https://github.com/marrus-sh/Roost.git#0.1.1",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  },
+  "directories": {
+    "doc": "./Sources",
+    "lib": "./Build",
+    "test": "./Tests"
+  },
+  "browser": "Build/langtag.js",
+  "scripts": {
+    "prepare": "cake build",
+    "test": "mocha --require coffeescript/register \"./Tests/*.coffee\""
+  }
+}
